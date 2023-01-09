@@ -1,3 +1,29 @@
-.image{
-    aspect-ratio: 1/1;
+/* .no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+  */
+
+  .scrollbar::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+
+.scrollbar::-webkit-scrollbar-track {
+    border-radius: 50vh;
+    background: #fff;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+    background: #37b2b0;
+    border-radius: 100vh;
+    border: 3px solid #f6f7ed;
+}
+
+.scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #c0a0b9;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+body{
+  font-family: 'Nunito', sans-serif;
 }
