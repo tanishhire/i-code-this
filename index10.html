@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="index.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body
+    class="bg-gradient-to-br from-[#009fa5] to-[#006672] flex flex-col justify-center items-center min-h-screen"
+  >
+    <div
+      onclick="progress()"
+      class="border cursor-pointer rounded-full bg-[#004555] w-[50%] h-2"
+    >
+      <div
+        id="progress-bar"
+        class="w-4 cursor-pointer h-full bg-gradient-to-r from-[#69c5ee] to-[#64ebc2]"
+      ></div>
+    </div>
+    <button onclick="progress()" class="my-10 border px-10 py-2 rounded-full hover:scale-105 hover:bg-[#eeee]">click here</button>
+  </body>
+  <script>
+    var i = 0;
+
+    function progress() {
+      if (i == 0) {
+        i = 1;
+        var element = document.getElementById("progress-bar");
+        var width = 63;
+        var id = setInterval(frame, 10);
+        function frame() {
+          if (width >= 100) {
+            clearInterval(id);
+            i = 0;
+          } else {
+            width;
+            element.style.width = width + "%";
+            element.innerHTML  = "<span class='display-per'>63%</span>"
+          }
+        }
+      }
+    }
+  </script>
+</html>
