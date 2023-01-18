@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+body {
+  font-family: "Nunito", sans-serif;
+}
+
+.striped-border {
+    text-align: center;
+  padding: 20px;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  background: conic-gradient(#ECBB00 36deg, #8068FA 36deg 170deg, #00E7C0 170deg);
+}
+
+.striped-border::after{
+    text-align: center;
+    content: "314 Total";
+    background-color: #26343a;
+    border-radius: 50%;
+    width: 193px;
+    height: 193px;
+    position: absolute;
+    left: 50%;
+    bottom: 16.2%;
+    transform: translate(-50%, -50%);
+
+    
+}

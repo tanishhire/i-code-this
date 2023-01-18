@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="index12.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-black flex justify-center items-center min-h-screen">
+    <div
+      class="bg-white p-8 flex flex-col rounded md:w-[65%] h-auto mx-auto my-auto"
+    >
+      <div class="flex my-8 flex-col">
+        <div class="flex flex-row w-full mx-auto justify-center items-center">
+          <svg
+            class="w-8 h-8 hover:scale-105 cursor-pointer"
+            xmlns="http://www.w3.org/2000/svg"
+            fill=""
+            viewBox="0 0 512 512"
+          >
+            <!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+            <path
+              d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512z"
+            />
+          </svg>
+          <div class="w-2/6 items-center my-2 flex">
+            <div class="w-full h-2 bg-[#11182e]"></div>
+          </div>
+          <svg
+            class="w-8 h-8 hover:scale-105 cursor-pointer"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 512 512"
+          >
+            <!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+            <path
+              d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512z"
+            />
+          </svg>
+          <div class="w-2/6 items-center my-2 h-3 flex border border-2 duration-500" onclick="selected(this)">
+            <div  class="svgwidth h-auto duration-500 cursor-pointer" ></div>
+          </div>
+          <svg
+            onclick="selected()"
+            class=" w-8 h-8  cursor-pointer hover:scale-105 "
+            
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 512 512"
+          >
+            <!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+            <path
+              d="M512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256zM256 48C141.1 48 48 141.1 48 256C48 370.9 141.1 464 256 464C370.9 464 464 370.9 464 256C464 141.1 370.9 48 256 48z"
+            />
+          </svg>
+        </div>
+        <div class="flex flex-col mx-0 md:mx-4 lg:mx-24">
+          <div
+            class="flex flex-row w-full mx-auto justify-between lg:px-8 md:px-8 items-center"
+          >
+            <div>
+              <h1 class="text-xs md:text-lg lg:text-xl">Order Placed</h1>
+            </div>
+            <!-- <div class="w-2/6 items-center  my-2  flex  ">
+                        <div class="w-full h-2  bg-[#11182e]"></div>
+                    </div> -->
+            <div class="pr-4">
+              <h1 class="text-xs md:text-lg lg:text-xl">Approved</h1>
+            </div>
+            <!-- <div class="w-2/6 items-center  my-2  h-3 flex border border-2">
+                        <div class="w-full h-auto "></div>
+                    </div> -->
+            <div><h1 class="text-xs md:text-lg lg:text-xl">Delivered</h1></div>
+          </div>
+        </div>
+      </div>      
+      
+      
+      <div class="flex my-8 flex-col">
+        <div class="flex flex-row w-full mx-auto justify-center items-center">
+            <span class="w-8 h-8 rounded-full border border-black  duration-500 hover:scale-105 cursor-pointer  border-1 items-center text-center justify-center ">		1</span>
+
+          </svg>
+          <div class="w-2/6 items-center my-2 mx-2 flex">
+            <div class="w-full h-1 bg-[#11182e]"></div>
+          </div>
+                      <span class="w-8 hover:scale-105 cursor-pointer  duration-500  h-8 rounded-full border border-black border-1 items-center text-center justify-center ">		2</span>
+
+          <div class="w-2/6 items-center my-2 h-1 flex border border-2 mx-2 duration-500" onclick="selected(this)">
+            <div  class="svgwidth h-1 mx-2 duration-500 cursor-pointer" ></div>
+          </div>
+                      <span class="w-8  hover:scale-105 cursor-pointer duration-500  h-8 rounded-full border border-black border-1 items-center text-center justify-center ">		3</span>
+
+        </div>
+        <div class="flex flex-col mx-0 md:mx-4 lg:mx-24">
+          <div
+            class="flex flex-row w-full mx-auto justify-between lg:px-8 md:px-8 items-center"
+          >
+            <div>
+              <h1 class="text-xs md:text-lg lg:text-xl">Order Placed</h1>
+            </div>
+            <!-- <div class="w-2/6 items-center  my-2  flex  ">
+                        <div class="w-full h-2  bg-[#11182e]"></div>
+                    </div> -->
+            <div class="pr-4">
+              <h1 class="text-xs md:text-lg lg:text-xl">In review</h1>
+            </div>
+            <!-- <div class="w-2/6 items-center  my-2  h-3 flex border border-2">
+                        <div class="w-full h-auto "></div>
+                    </div> -->
+            <div><h1 class="text-xs md:text-lg lg:text-xl">Delivered</h1></div>
+          </div>
+        </div>
+      </div>      
+      
+      <div class="flex my-8 flex-col">
+        <div class="flex flex-row w-full mx-auto justify-center items-center">
+            <span class="w-8 h-8 hover:scale-105 cursor-pointer  rounded-full duration-500  border border-black border-1 items-center text-center justify-center ">		&#10003;</span>
+          <div class="w-2/6 items-center my-2 flex">
+            <div class="w-full h-2 bg-[#11182e]"></div>
+          </div>
+          <span class="w-8 h-8 rounded-full hover:scale-105 cursor-pointer  duration-500  border border-black border-8 items-center  text-center justify-center"></span>
+          <div class="w-2/6 items-center my-2 h-3 flex border border-2 duration-500" onclick="selected(this)">
+            <div  class="svgwidth h-auto duration-500 cursor-pointer" ></div>
+          </div>
+          <span class="w-8 h-8 hover:scale-105 cursor-pointer  rounded-full duration-500  border border-black border-8 items-center "></span>
+          <!-- <svg
+            onclick="selected()"
+            class=" w-8 h-8  cursor-pointer hover:scale-105 "
+            
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 512 512"
+          >
+            ! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. 
+            <path
+              d="M512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256zM256 48C141.1 48 48 141.1 48 256C48 370.9 141.1 464 256 464C370.9 464 464 370.9 464 256C464 141.1 370.9 48 256 48z"
+            />
+          </svg> -->
+        </div>
+        <div class="flex flex-col mx-0 md:mx-4 lg:mx-24">
+          <div
+            class="flex flex-row w-full mx-auto justify-between lg:px-8 md:px-8 items-center"
+          >
+            <div>
+              <h1 class="text-xs md:text-lg lg:text-xl">Order Placed</h1>
+            </div>
+            <!-- <div class="w-2/6 items-center  my-2  flex  ">
+                        <div class="w-full h-2  bg-[#11182e]"></div>
+                    </div> -->
+            <div class="pr-4">
+              <h1 class="text-xs md:text-lg lg:text-xl">In review</h1>
+            </div>
+            <!-- <div class="w-2/6 items-center  my-2  h-3 flex border border-2">
+                        <div class="w-full h-auto "></div>
+                    </div> -->
+            <div><h1 class="text-xs md:text-lg lg:text-xl">Delivered</h1></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      let divItems = document.getElementsByClassName("svgwidth");
+
+      const selected = (divItems) => {
+        divItems.style.backgroundColor = "#11182e";
+      };
+
+    </script>
+  </body>
+</html>
+
+<!-- component -->
+<!-- <div class="max-w-xl mx-auto my-4 border-b-2 pb-4">	
+	<div class="flex pb-3">
+		<div class="flex-1">
+		</div>
+
+		<div class="flex-1">
+			<div class="w-10 h-10 bg-green mx-auto rounded-full text-lg text-white flex items-center">
+				<span class="text-white text-center w-full"><i class="fa fa-check w-full fill-current white"></i></span>
+			</div>
+		</div>
+
+
+		<div class="w-1/6 align-center items-center align-middle content-center flex">
+			<div class="w-full bg-grey-light rounded items-center align-middle align-center flex-1">
+			 	<div class="bg-green-light text-xs leading-none py-1 text-center text-grey-darkest rounded " style="width: 100%"></div>
+			</div>
+		</div>
+	
+		
+		<div class="flex-1">
+			<div class="w-10 h-10 bg-green mx-auto rounded-full text-lg text-white flex items-center">
+				<span class="text-white text-center w-full"><i class="fa fa-check w-full fill-current white"></i></span>
+			</div>
+		</div>
+	
+		<div class="w-1/6 align-center items-center align-middle content-center flex">
+			<div class="w-full bg-grey-light rounded items-center align-middle align-center flex-1">
+			 	<div class="bg-green-light text-xs leading-none py-1 text-center text-grey-darkest rounded " style="width: 20%"></div>
+			</div>
+		</div>
+	
+		<div class="flex-1">
+			<div class="w-10 h-10 bg-white border-2 border-grey-light mx-auto rounded-full text-lg text-white flex items-center">
+				<span class="text-grey-darker text-center w-full">3</span>
+			</div>
+		</div>
+	
+	
+		<div class="w-1/6 align-center items-center align-middle content-center flex">
+			<div class="w-full bg-grey-light rounded items-center align-middle align-center flex-1">
+			 	<div class="bg-green-light text-xs leading-none py-1 text-center text-grey-darkest rounded " style="width: 0%"></div>
+			</div>
+		</div>
+
+
+		<div class="flex-1">
+			<div class="w-10 h-10 bg-white border-2 border-grey-light mx-auto rounded-full text-lg text-white flex items-center">
+				<span class="text-grey-darker text-center w-full">4</span>
+			</div>
+		</div>
+	
+	
+		<div class="flex-1">
+		</div>		
+	</div>
+	
+	<div class="flex text-xs content-center text-center">
+		<div class="w-1/4">
+			Invitation received
+		</div>
+		
+		<div class="w-1/4">
+			Personal details
+		</div>
+		
+		<div class="w-1/4">
+			Application details
+		</div>
+		
+		<div class="w-1/4">
+			Confirmation
+		</div>			
+	</div>
+</div> -->
